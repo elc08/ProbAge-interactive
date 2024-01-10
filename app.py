@@ -12,9 +12,9 @@ st.title('Interactive Exploration of Methylation Dynamics.')
 with st.sidebar:
 
     st.markdown('# Model parameters')
-    p = st.slider(r'$p$', 0., 1., 0.1, 0.01) 
-    eta_0 = st.slider(r'$\eta_0$', 0., 1., 0.9, 0.01) 
-    omega = st.slider(r'$\omega$', 0., 0.05, 0.02, 0.001)
+    p = st.slider('Initial methylation level,\t ' + r'$p$', 0., 1., 0.1, 0.01) 
+    eta_0 = st.slider('Terminal methylation level,\t' + r'$\eta_0$', 0., 1., 0.9, 0.01) 
+    omega = st.slider('Speed,\t' + r'$\omega$', 0., 0.05, 0.02, 0.001)
     var_init = st.slider('Initial variance', 0.0001, 100. , 10., 10.)
     N = st.slider('System size', 10., 1000., 100., 100.)
     acc = st.slider('Acceleration', -1., 1., 0., 0.1)
