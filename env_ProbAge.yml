@@ -1,0 +1,16 @@
+name: ProbAge_plot
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python
+  - streamlit
+  - numpy
+  - plotly
+  - matplotlib
+  - ipykernel
+  - nbformat
+  - scipy
+  - ipywidgets
+  - Dash
+  - dcc
